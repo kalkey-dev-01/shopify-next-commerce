@@ -1,4 +1,5 @@
 module.exports = {
+ 
   future: {
     purgeLayersByDefault: true,
     applyComplexClasses: true,
@@ -46,6 +47,8 @@ module.exports = {
         blue: 'var(--blue)',
         green: 'var(--green)',
         red: 'var(--red)',
+        'coolgreen' : '#d8ff32',
+        'robeblue' : '#000335'
       },
       textColor: {
         base: 'var(--text-base)',

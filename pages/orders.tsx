@@ -32,7 +32,7 @@ export default function Orders() {
           No orders found
         </h2>
         <p className="text-accent-6 px-10 text-center pt-2">
-          Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
+          CoolRobe insures you get your product.
         </p>
       </div>
     </Container>
