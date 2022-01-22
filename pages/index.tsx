@@ -12,10 +12,10 @@ export async function getStaticProps({
 }: GetStaticPropsContext) {
   const config = { locale, locales }
   const productsPromise = commerce.getAllProducts({
-    variables: { first: 6 },
+    variables: { first: 200 },
     config,
     preview,
-    // Saleor provider only
+    // Sale or provider only
     ...({ featured: true } as any),
   })
   const pagesPromise = commerce.getAllPages({ config, preview })
@@ -41,7 +41,7 @@ export default function Home({
   return (
     <>
       <Grid variant="filled">
-        {products.slice(0, 3).map((product: any, i: number) => (
+        {products.slice(10, 20).map((product: any, i: number) => (
           <ProductCard
             key={product.id}
             product={product}
@@ -53,7 +53,7 @@ export default function Home({
         ))}
       </Grid>
       <Marquee variant="secondary">
-        {products.slice(0, 3).map((product: any, i: number) => (
+        {products.slice(21, 29).map((product: any, i: number) => (
           <ProductCard key={product.id} product={product} variant="slim" />
         ))}
       </Marquee>
@@ -61,8 +61,8 @@ export default function Home({
         headline=" Best Customised Clothing."
         description="Customise your own clothing with our customised clothing designs."
       />
-      <Grid layout="B" variant="filled">
-        {products.slice(0, 3).map((product: any, i: number) => (
+      <Grid layout="D" variant="filled">
+        {products.slice(29, 39).map((product: any, i: number) => (
           <ProductCard
             key={product.id}
             product={product}
@@ -74,7 +74,7 @@ export default function Home({
         ))}
       </Grid>
       <Marquee>
-        {products.slice(3).map((product: any, i: number) => (
+        {products.slice(39, 49).map((product: any, i: number) => (
           <ProductCard key={product.id} product={product} variant="slim" />
         ))}
       </Marquee>

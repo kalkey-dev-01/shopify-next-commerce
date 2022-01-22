@@ -61,7 +61,7 @@ export default function Wishlist() {
                 Your wishlist is empty
               </h2>
               <p className="text-accent-6 px-10 text-center pt-2">
-                Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
+                Your Orders will appear here.
               </p>
             </div>
           ) : (

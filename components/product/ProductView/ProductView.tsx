@@ -66,7 +66,7 @@ const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
         </div>
         <hr className="mt-7 border-accent-2" />
         <section className="py-12 px-6 mb-10">
-          <Text variant="sectionHeading">Related Products</Text>
+          <Text variant="sectionHeading">Products you would like</Text>
           <div className={s.relatedProductsGrid}>
             {relatedProducts.map((p) => (
               <div
@@ -77,7 +77,7 @@ const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
                   noNameTag
                   product={p}
                   key={p.path}
-                  variant="simple"
+                  variant="slim"
                   className="animated fadeIn"
                   imgProps={{
                     width: 300,
