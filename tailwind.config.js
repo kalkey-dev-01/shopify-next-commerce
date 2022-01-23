@@ -1,5 +1,4 @@
-module.exports = {
- 
+module.exports = { 
   future: {
     purgeLayersByDefault: true,
     applyComplexClasses: true,
