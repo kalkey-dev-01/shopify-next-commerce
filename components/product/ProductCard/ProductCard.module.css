@@ -54,7 +54,7 @@
 }
 
 .header .name span {
-  @apply py-4 px-6 bg-primary text-primary font-bold
+  @apply py-4 px-6 bg-robeblue text-coolgreen font-bold
   transition-colors ease-in-out duration-500;
   font-size: inherit;
   letter-spacing: inherit;
@@ -63,7 +63,7 @@
 }
 
 .header .price {
-  @apply pt-2 px-6 pb-4 text-sm bg-primary text-accent-9
+  @apply pt-2 px-6 pb-4 text-sm bg-robeblue text-accent-9
   font-semibold inline-block tracking-wide
   transition-colors ease-in-out duration-500;
 }
