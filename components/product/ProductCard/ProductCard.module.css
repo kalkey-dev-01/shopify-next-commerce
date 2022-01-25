@@ -63,7 +63,7 @@
 }
 
 .header .price {
-  @apply pt-2 px-6 pb-4 text-sm bg-robeblue text-accent-9
+  @apply pt-2 px-6 pb-4 text-sm bg-robeblue text-coolgreen
   font-semibold inline-block tracking-wide
   transition-colors ease-in-out duration-500;
 }

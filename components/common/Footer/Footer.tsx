@@ -36,7 +36,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
                 <span className="rounded-full border border-accent-6 mr-2">
                   <Logo />
                 </span>
-                <span>CoolRobe</span>
+                <span className='flex text-white'>Cool</span><span className=' hover:text-coolgreen'>Robe</span>
               </a>
             </Link>
           </div>
@@ -45,7 +45,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
               {[...links, ...sitePages].map((page) => (
                 <span key={page.url} className="py-3 md:py-0 md:pb-4">
                   <Link href={page.url!}>
-                    <a className="text-accent-9 hover:text-accent-6 transition ease-in-out duration-150">
+                    <a className="text-white hover:text-coolgreen transition ease-in-out duration-150">
                       {page.name}
                     </a>
                   </Link>
@@ -55,13 +55,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
           </div>
           <div className="col-span-1 lg:col-span-2 flex items-start lg:justify-end text-primary">
             <div className="flex space-x-6 items-center h-10">
-              <a
-                className={s.link}
-                aria-label="Github Repository"
-                href="https://github.com/vercel/commerce"
-              >
-                <Github />
-              </a>
+              
               <I18nWidget />
             </div>
           </div>

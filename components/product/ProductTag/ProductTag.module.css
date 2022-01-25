@@ -1,13 +1,13 @@
 .root {
   @apply transition-colors ease-in-out duration-500
-  absolute top-0 left-0 z-20 pr-16;
+  absolute bottom-0 right-0 z-20 pr-5;
 }
 
 .root .name {
-  @apply pt-0 max-w-full w-full leading-extra-loose;
+  @apply pt-0 max-w-full w-full leading-extra-loose ;
   font-size: 2rem;
   letter-spacing: 0.4px;
-  line-height: 2.2em;
+  line-height: 2.0em;
 }
 
 .root .name span {

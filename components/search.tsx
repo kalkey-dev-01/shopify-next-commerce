@@ -104,7 +104,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                   : ''
               }`}
             >
-              <div className="rounded-sm bg-accent-0 shadow-xs lg:bg-none lg:shadow-none">
+              <div className="rounded-sm bg-coolgreen shadow-xs lg:bg-none lg:shadow-none">
                 <div
                   role="menu"
                   aria-orientation="vertical"
@@ -113,7 +113,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                   <ul>
                     <li
                       className={cn(
-                        'block text-sm leading-5 text-accent-4 lg:text-base lg:no-underline lg:font-bold lg:tracking-wide hover:bg-accent-1 lg:hover:bg-transparent hover:text-accent-8 focus:outline-none focus:bg-accent-1 focus:text-accent-8',
+                        'block text-base leading-5 text-robeblue lg:text-robeblue lg:no-underline lg:font-bold lg:tracking-wide hover:bg-accent-1 lg:hover:bg-transparent hover:text-black focus:outline-none focus:bg-accent-1 focus:text-accent-8',
                         {
                           underline: !activeCategory?.name,
                         }
@@ -136,7 +136,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                       <li
                         key={cat.path}
                         className={cn(
-                          'block text-sm leading-5 text-accent-4 hover:bg-accent-1 lg:hover:bg-transparent hover:text-accent-8 focus:outline-none focus:bg-accent-1 focus:text-accent-8',
+                          'block text-sm leading-5 font-semibold text-robeblue  hover:bg-accent-1 lg:hover:bg-transparent hover:text-robeblue focus:outline-none focus:bg-accent-1 focus:text-accent-8',
                           {
                             underline: activeCategory?.id === cat.id,
                           }
@@ -202,7 +202,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                   : ''
               }`}
             >
-              <div className="rounded-sm bg-accent-0 shadow-xs lg:bg-none lg:shadow-none">
+              <div className="rounded-sm bg-coolgreen shadow-xs lg:bg-none lg:shadow-none">
                 <div
                   role="menu"
                   aria-orientation="vertical"
@@ -211,7 +211,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                   <ul>
                     <li
                       className={cn(
-                        'block text-sm leading-5 text-accent-4 lg:text-base lg:no-underline lg:font-bold lg:tracking-wide hover:bg-accent-1 lg:hover:bg-transparent hover:text-accent-8 focus:outline-none focus:bg-accent-1 focus:text-accent-8',
+                        'block text-sm leading-5 text-robeblue lg:text-robeblue lg:no-underline lg:font-bold lg:tracking-wide hover:bg-accent-1 lg:hover:bg-transparent hover:text-black focus:outline-none focus:bg-accent-1 focus:text-accent-8',
                         {
                           underline: !activeBrand?.name,
                         }
@@ -237,7 +237,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                       <li
                         key={node.path}
                         className={cn(
-                          'block text-sm leading-5 text-accent-4 hover:bg-accent-1 lg:hover:bg-transparent hover:text-accent-8 focus:outline-none focus:bg-accent-1 focus:text-accent-8',
+                          'block text-sm leading-5 text-robeblue font-semibold hover:bg-accent-1 lg:hover:bg-transparent hover:text-black focus:outline-none focus:bg-accent-1 focus:text-accent-8',
                           {
                             // @ts-ignore Shopify - Fix this types
                             underline: activeBrand?.entityId === node.entityId,
@@ -372,7 +372,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                 activeFilter !== 'sort' || toggleFilter !== true ? 'hidden' : ''
               }`}
             >
-              <div className="rounded-sm bg-accent-0 shadow-xs lg:bg-none lg:shadow-none">
+              <div className="rounded-sm bg-coolgreen shadow-xs lg:bg-none lg:shadow-none">
                 <div
                   role="menu"
                   aria-orientation="vertical"
@@ -381,7 +381,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                   <ul>
                     <li
                       className={cn(
-                        'block text-sm leading-5 text-accent-4 lg:text-base lg:no-underline lg:font-bold lg:tracking-wide hover:bg-accent-1 lg:hover:bg-transparent hover:text-accent-8 focus:outline-none focus:bg-accent-1 focus:text-accent-8',
+                        'block text-sm leading-5 text-robeblue lg:text-robeblue lg:no-underline lg:font-bold lg:tracking-wide hover:bg-coolgreen lg:hover:bg-transparent hover:text-black focus:outline-none focus:bg-accent-1 focus:text-accent-8',
                         {
                           underline: !sort,
                         }
