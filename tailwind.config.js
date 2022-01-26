@@ -14,7 +14,7 @@ module.exports = {
       },
     },
   },
-  theme: {
+  theme: { 
     extend: {
       maxWidth: {
         '8xl': '1920px',

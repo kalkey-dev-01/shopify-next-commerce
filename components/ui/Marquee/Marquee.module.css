@@ -14,9 +14,9 @@
 }
 
 .primary {
-  @apply bg-accent-0;
+  @apply bg-robeblue;
 }
 
 .secondary {
-  @apply bg-accent-9;
+  @apply bg-coolgreen text-white;
 }

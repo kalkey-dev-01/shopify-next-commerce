@@ -113,7 +113,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                   <ul>
                     <li
                       className={cn(
-                        'block text-base leading-5 text-robeblue lg:text-robeblue lg:no-underline lg:font-bold lg:tracking-wide hover:bg-accent-1 lg:hover:bg-transparent hover:text-black focus:outline-none focus:bg-accent-1 focus:text-accent-8',
+                        'block text-base leading-5 text-white lg:text-robeblue lg:no-underline lg:font-bold lg:tracking-wide hover:bg-accent-1 lg:hover:bg-transparent hover:text-black focus:outline-none focus:bg-accent-1 focus:text-accent-8',
                         {
                           underline: !activeCategory?.name,
                         }
