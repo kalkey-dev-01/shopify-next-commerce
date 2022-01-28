@@ -68,7 +68,7 @@ const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
         <section className="py-12 px-6 mb-10">
           <Text variant="sectionHeading">Products you would like</Text>
           <div className={s.relatedProductsGrid}>
-            {relatedProducts.map((p) => (
+            {relatedProducts.slice(3,9).map((p: any ,i : number) => (
               <div
                 key={p.path}
                 className="animated fadeIn bg-accent-0 border border-accent-2"
